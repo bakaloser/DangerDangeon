@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 			BulletsHandler.instance.RemoveBullet(this);
 			collision.GetComponent<CentipedeCell>().IsHit();
 		}
-		else if(collision.name.Contains("Pumpkin"))
+		else if(collision.name.Contains("Obstacle"))
 		{
 			BulletsHandler.instance.RemoveBullet(this);
 			collision.GetComponent<ObstaclePumpkin>().IncreaseXp();
